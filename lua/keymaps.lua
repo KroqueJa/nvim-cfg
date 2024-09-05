@@ -14,9 +14,9 @@ nmapkey('<leader>A', 'ggVG=')
 
 -- ======== Flash ========
 -- Flash jump
-mapkey('n', 'ss', '<cmd>lua require('flash').jump()<CR>')
-mapkey('x', 'ss', '<cmd>lua require('flash').jump()<CR>')
-mapkey('o', 'ss', '<cmd>lua require('flash').jump()<CR>')
+mapkey('n', 'ss', '<cmd>lua require("flash").jump()<CR>')
+mapkey('x', 'ss', '<cmd>lua require("flash").jump()<CR>')
+mapkey('o', 'ss', '<cmd>lua require("flash").jump()<CR>')
 
 -- Ctrl+q to toggle Neo-tree
 nmapkey('<C-q>', ':Neotree toggle<CR>')
