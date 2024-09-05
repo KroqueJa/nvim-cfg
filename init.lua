@@ -36,6 +36,7 @@ vim.g.maplocalleader = ','
 
 -- Display a vertical line at 100 characters
 vim.o.colorcolumn = "100"
+
 -- ======== Require ========
 require('pkg.lazy')
 require('theme.dracula')

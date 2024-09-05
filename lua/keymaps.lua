@@ -97,3 +97,6 @@ nmapkey('<Leader>r', ':lua require("dapui").open({reset = true})<CR>')
 
 -- Set conditional `B`reakpoint: Set a breakpoint with a user-defined condition
 nmapkey('<leader>B', ':lua require("dap").set_breakpoint(vim.fn.input("Breakpoint condition (key==\'value\'): "))<CR>')
+
+-- ======== Neogen ========
+nmapkey('<leader>ng', ':lua require("neogen").generate()<CR>')
