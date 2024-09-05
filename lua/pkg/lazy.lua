@@ -1,4 +1,4 @@
--- TODO: refactor all configs to own files
+-- TODO refactor all configs to own files
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.system({
@@ -29,6 +29,13 @@ return require('lazy').setup({
         }
     },
 
+    -- todo
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {}
+    },
+
     -- neogen
     { 
         "danymat/neogen", 
@@ -50,7 +57,6 @@ return require('lazy').setup({
             require('mason-lspconfig').setup()
             local lspconfig = require('lspconfig')
 
-            -- TODO: Align this GPT code with other lua coding style
             lspconfig.pyright.setup({})
             lspconfig.clangd.setup({})
 

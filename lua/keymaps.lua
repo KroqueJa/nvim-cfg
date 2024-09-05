@@ -100,3 +100,11 @@ nmapkey('<leader>B', ':lua require("dap").set_breakpoint(vim.fn.input("Breakpoin
 
 -- ======== Neogen ========
 nmapkey('<leader>ng', ':lua require("neogen").generate()<CR>')
+
+-- ======== td-comments ========
+-- `t`o`d`o `n`ext
+nmapkey('<leader>tdn', ':lua require("todo-comments").jump_next()<CR>')
+-- `t`o`d`o `p`revious
+nmapkey('<leader>tdp', ':lua require("todo-comments").jump_prev()<CR>')
+-- `t`o`d`o`l`oc`l`ist
+nmapkey('<leader>tdll', ':TodoLocList<CR>')
