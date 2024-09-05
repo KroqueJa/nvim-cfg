@@ -130,7 +130,10 @@ return require('lazy').setup({
 
     -- lualine
     {
-        'nvim-lualine/lualine.nvim'
+        'nvim-lualine/lualine.nvim',
+        config = function()
+            require('config.lualine').setup()
+        end,
     },
 
     -- lazygit
