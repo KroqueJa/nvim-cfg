@@ -112,6 +112,11 @@ return require('lazy').setup({
                     },
                 },
             })
+
+            -- Enable Treesitter folding
+            vim.opt.foldmethod = 'expr'
+            vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+            vim.opt.foldlevel = 99 -- Prevent folds from being closed by default
         end,
     },
 

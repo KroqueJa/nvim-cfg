@@ -108,3 +108,4 @@ nmapkey('<leader>tdn', ':lua require("todo-comments").jump_next()<CR>')
 nmapkey('<leader>tdp', ':lua require("todo-comments").jump_prev()<CR>')
 -- `t`o`d`o`l`oc`l`ist
 nmapkey('<leader>tdll', ':TodoLocList<CR>')
+
