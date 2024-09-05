@@ -34,7 +34,8 @@ vim.opt.mouse = 'a'            -- Enable mouse in all modes
 vim.g.mapleader = ','
 vim.g.maplocalleader = ','
 
--- Function to highlight word under cursor
+-- Display a vertical line at 100 characters
+vim.o.colorcolumn = "100"
 -- ======== Require ========
 require('pkg.lazy')
 require('theme.dracula')
