@@ -119,3 +119,6 @@ nmapkey('<leader>fg', ':lua require("telescope.builtin").live_grep()<CR>')
 -- `f`ind `b`uffer
 nmapkey('<leader>fb', ':lua require("telescope.builtin").find_buffer()<CR>')
 
+-- ======== Toggleterm ========
+-- `t`oggle`t`erm
+nmapkey('<leader>tt', ':ToggleTerm<CR>')

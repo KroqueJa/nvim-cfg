@@ -128,7 +128,7 @@ return require('lazy').setup({
         branch = 'v3.x',
         dependencies = {
             'nvim-lua/plenary.nvim',
-            'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+            'nvim-tree/nvim-web-devicons',
             'MunifTanjim/nui.nvim',
             -- '3rd/image.nvim', -- Optional image support in preview window: See `# Preview Mode` for more information
         },
@@ -179,6 +179,7 @@ return require('lazy').setup({
     },
 
     -- auto-close brackets
+    -- TODO: Check if we can get auto-semicolon after classes and structs
     {
         'rstacruz/vim-closer'
     },
@@ -216,7 +217,20 @@ return require('lazy').setup({
         'nvim-telescope/telescope.nvim',
         dependencies = {'nvim-lua/plenary.nvim'},
         config = function() require('telescope').setup() end
-    }
+    },
+
+    -- toggleterm
+    {'akinsho/toggleterm.nvim', version = "*", opts = {
+        hide_numbers = true,
+        direction = 'float',
+        close_on_exit = true,
+        border = 'curved',
+        width = 80,
+        height = 80,
+    }}
+
+
+
 })
 
 

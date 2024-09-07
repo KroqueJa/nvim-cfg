@@ -1,11 +1,5 @@
 -- Use system clipboard
-vim.o.clipboard = vim.o.clipboard .. 'unnamedplus'
-vim.g.clipboard = {
-    name = 'pbcopy/paste',
-    copy = {['+'] = 'pbc', ['*'] = 'pbc'},
-    paste = {['+'] = 'pbp', ['*'] = 'pbp'},
-    cache_enabled = 0
-}
+vim.opt.clipboard = 'unnamedplus'
 
 -- Show whitespace characters
 vim.opt.list = true
