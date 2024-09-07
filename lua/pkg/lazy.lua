@@ -86,9 +86,11 @@ return require('lazy').setup({
         build = ':TSUpdate',
         config = function()
             require('nvim-treesitter.configs').setup({
-                ensure_installed = 'all', -- Install parsers for all supported languages
+                ensure_installed = 'all',
+                sync_install = true,
+                auto_install = true,
                 highlight = {
-                    enable = true, -- Enable Tree-sitter based syntax highlighting
+                    enable = true,
                 },
                 incremental_selection = {
                     enable = true,
@@ -208,6 +210,13 @@ return require('lazy').setup({
             'nvim-neotest/nvim-nio'
         }
     },
+
+    -- telescope
+    {
+        'nvim-telescope/telescope.nvim',
+        dependencies = {'nvim-lua/plenary.nvim'},
+        config = function() require('telescope').setup() end
+    }
 })
 
 

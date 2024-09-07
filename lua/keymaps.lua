@@ -109,3 +109,13 @@ nmapkey('<leader>tdp', ':lua require("todo-comments").jump_prev()<CR>')
 -- `t`o`d`o`l`oc`l`ist
 nmapkey('<leader>tdll', ':TodoLocList<CR>')
 
+-- ======== Telescope ========
+-- `f`ind `f`ile
+nmapkey('<leader>ff', ':lua require("telescope.builtin").find_files()<CR>')
+
+-- `f`ind `g`rep
+nmapkey('<leader>fg', ':lua require("telescope.builtin").live_grep()<CR>')
+
+-- `f`ind `b`uffer
+nmapkey('<leader>fb', ':lua require("telescope.builtin").find_buffer()<CR>')
+

@@ -2,8 +2,8 @@
 vim.o.clipboard = vim.o.clipboard .. 'unnamedplus'
 vim.g.clipboard = {
     name = 'pbcopy/paste',
-    copy = {['+'] = 'pbcopy', ['*'] = 'pbcopy'},
-    paste = {['+'] = 'pbpaste', ['*'] = 'pbpaste'},
+    copy = {['+'] = 'pbc', ['*'] = 'pbc'},
+    paste = {['+'] = 'pbp', ['*'] = 'pbp'},
     cache_enabled = 0
 }
 
